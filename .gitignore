@@ -1,0 +1,7 @@
+styles.scss
+.DS_Store
+/.DS_Store 
+.vscode/* 
+node_modules
+style.css.map
+ 

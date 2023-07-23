@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glassesusa/dsm@latest/dist/styles.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Scripts - Required if you are using any form elements/buttons-->
+    <!-- <!-- <script src="https://cdn.jsdelivr.net/npm/@glassesusa/dsm@latest/dist/dsm-effects.min.js"></script> -->
+
+    <title>Developer Test - Landing page</title>
+  </head>
+  <body>
+    <header>
+      <div class="hero-image">
+        <picture>
+         
+          <source
+            media="(min-width: 1024px)"
+            srcset="assets/1024/Hero-image1024.png"
+          />
+          <source
+          media="(min-width: 1280px)"
+          srcset="assets/1440/Hero-image1440.png"
+        />
+          <img src="assets/1440/Hero-image1440.png" alt="glasses" />
+        </picture>
+        <div class="hero-text">
+          <h1>GlassesUSA.com X Miss America</h1>
+          <p>Find the candidates top picks</p>
+          <button class="dsmButton round white">See Collection</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div id="Description" class="Description">
+        <h2>More than meets the eye</h2>
+        <p class="p">
+          Glasses are much more than a fashion accessory or a vision correction
+          device. The right pair holds the power to make glasses wearers feel
+          incredible and reach their full potential. Together with Miss America,
+          who's committed to empower the advocates and leaders of tomorrow, we
+          want to inspire glasses wearers to dream big and persuade their goals.
+        </p>
+      </div>
+      <div id="Pagination">
+        <div id="Images" class="Images"></div>
+        <div class="Buttons">
+          <button id="prev-button" aria-label="Previous page" title="Previous page">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="12"
+              viewBox="0 0 8 12"
+              fill="none"
+            >
+              <path
+                d="M7 11L1 6L7 1"
+                stroke="#0F0F0F"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <button id="next-button" aria-label="Next page" title="Next page">
+            <svg
+              width="8"
+              height="12"
+              viewBox="0 0 12 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                vector-effect="non-scaling-stroke"
+                d="M1 19L11 10L1 1"
+                stroke="#0F0F0F"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="content">
+        <div class="text">
+          <h4>Miss America</h4>
+          <p>
+            For the past 100 years, Miss America has been one of the country’s
+            most recognizable household names and has been at the center of
+            everything from national trends to social movements to the birth of
+            television. The young women involved have made a significant
+            difference in people’s lives through their charitable and community
+            service endeavors, using the national platform to educate millions
+            of Americans on issues facing the nation. <br />
+            <br />
+            Miss America is more than a title, it’s a movement of empowering
+            young women everywhere to dream big, to insist that their voices be
+            heard and to inspire change in the world around them.
+          </p>
+        </div>
+
+        <img src="assets/miss-america.jpg" alt="miss-america" loading="lazy"/>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

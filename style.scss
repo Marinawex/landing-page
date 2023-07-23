@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
+
+// _variables.scss
+
+$color-nevada: #5b6971;
+$color-porcelain: #f1f3f4;
+$color-ui-grey-cold-2: #f1f3f4;
+$color-ui-grey-cold-7: #3a4850;
+$color-ui-grey-cold-8: #232b30;
+$color-cod-gray: #0f0f0f;
+$color-ui-grey-warm-9: #4d4d4d;
+$color-white: #ffffff;
+$color-orange-white: #fef8ed;
+$color-disabled-button: #b0bdc5;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+    font-weight: 400;
+    line-height: 1.5rem;
+  }
+
+  font-family: "Roboto", sans-serif;
+  font-family: Roboto;
+  font-style: normal;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2,
+  h4 {
+    font-weight: 700;
+    color: $color-cod-gray;
+  }
+
+  header {
+    @media (min-width: 1440px) {
+      padding-right: 5rem;
+      padding-left: 5rem;
+    }
+
+    main {
+      @media (min-width: 1280px) {
+        padding-right: 5rem;
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+
+.hero-image {
+  height: 23.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  picture,
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.375rem;
+    margin-left: 1.5rem;
+
+    padding: 1rem;
+
+    @media (min-width: 1280px) {
+      padding: 6rem;
+    }
+  }
+}
+
+.Description {
+  text-align: center;
+  width: 54.875rem;
+  margin: 5rem auto;
+  color: $color-nevada;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+
+  .current-page {
+    border-radius: 0.125rem;
+    background-color: $color-ui-grey-cold-2;
+  }
+
+  button:disabled {
+    cursor: auto;
+    svg path {
+      stroke: $color-disabled-button;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $color-white;
+    display: flex;
+    width: 2.6875rem;
+    height: 2.625rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-ui-grey-cold-8;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+
+.Images {
+  display: flex;
+  padding: 0rem 2.5rem;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+
+  @media (min-width: 1280px) {
+    gap: 3.75rem;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: 1440px) {
+    margin: auto;
+    max-width: 66.25rem;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .avatar {
+      transition: all 0.3s ease-in-out;
+      width: 28.25rem;
+      height: 32.5rem;
+
+      object-fit: cover;
+    }
+
+    .text {
+      padding-left: 1rem;
+
+      h3 {
+        color: $color-nevada;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.125rem;
+      }
+
+      p {
+        color: $color-ui-grey-cold-8;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 150%;
+      }
+    }
+  }
+}
+
+.footer {
+  padding: 2.0625rem 2.5rem;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+
+  background: $color-orange-white;
+
+  .content {
+    display: flex;
+    padding: 2.375rem 0rem;
+    align-items: center;
+    gap: 2.5rem;
+
+    @media (min-width: 1280px) {
+      margin-left: 5rem;
+      margin-right: 5rem;
+      padding: 2.375rem 0rem;
+      justify-content: space-between;
+
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: $color-ui-grey-warm-9;
+    }
+  }
+}
