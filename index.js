@@ -17,7 +17,7 @@ const images = [
 
 const nextButton = document.getElementById("next-button");
 const prevButton = document.getElementById("prev-button");
-const buttonContainer = document.querySelector(".Buttons");
+const buttonContainer = document.querySelector(".buttons");
 let cardItems;
 
 const paginationLimit = 4;
@@ -72,7 +72,7 @@ const setCurrentPage = (pageNum) => {
 // fetch("images.json")
 //   .then((response) => response.json())
 //   .then((images) => {
-    let cardContainer = document.querySelector(".Images");
+    let cardContainer = document.querySelector(".images");
 
     for (let i = 0; i < images.length; i++) {
       const cardHTML = `
