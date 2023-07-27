@@ -101,7 +101,7 @@ body main {
     padding: 123px 703px 123px 111px;
   }
 }
-.hero-image .hero-text h1 {
+.hero-image .hero-text .hero-heading {
   color: var(--greys-white, #fff);
   font-family: Roboto;
   font-size: 32px;
@@ -109,7 +109,7 @@ body main {
   font-weight: 400;
   line-height: 150%; /* 48px */
 }
-.hero-image .hero-text p {
+.hero-image .hero-text .hero-p {
   color: var(--greys-white, #fff);
   font-family: Roboto;
   font-size: 20px;
@@ -274,7 +274,7 @@ body main {
   align-items: flex-start;
   gap: 6px;
 }
-.images .card .text h3 {
+.images .card .text .images-heading {
   color: var(--greys-cold-nevada, #5b6971);
   font-family: Roboto;
   font-size: 16px;
@@ -283,7 +283,7 @@ body main {
   line-height: 18px; /* 112.5% */
   width: 139.481px;
 }
-.images .card .text p {
+.images .card .text .images-p {
   color: var(--greys-cold-ui-grey-cold-8, #232b30);
   font-family: Roboto;
   font-size: 18px;
@@ -362,7 +362,7 @@ body main {
   border-radius: 8px;
   overflow: hidden;
 }
-.footer .footer-container img {
+.footer .footer-container .footer-image {
   width: 516px;
   height: 295px;
   flex-shrink: 0;

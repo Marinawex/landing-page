@@ -173,7 +173,7 @@ body {
       padding: 123px 703px 123px 111px;
     }
 
-    h1 {
+    .hero-heading{
       color: var(--greys-white, #fff);
       font-family: Roboto;
       font-size: 32px;
@@ -182,7 +182,7 @@ body {
       line-height: 150%; /* 48px */
     }
 
-    p {
+    .hero-p {
       color: var(--greys-white, #fff);
       font-family: Roboto;
       font-size: 20px;
@@ -398,7 +398,7 @@ body {
       align-items: flex-start;
       gap: 6px;
 
-      h3 {
+      .images-heading {
         color: var(--greys-cold-nevada, #5b6971);
         font-family: Roboto;
         font-size: 16px;
@@ -408,7 +408,7 @@ body {
         width: 139.481px;
       }
 
-      p {
+      .images-p {
         color: var(--greys-cold-ui-grey-cold-8, #232b30);
         font-family: Roboto;
         font-size: 18px;
@@ -500,7 +500,7 @@ body {
       overflow: hidden;
     }
 
-    img {
+    .footer-image {
       width: 516px;
       height: 295px;
       flex-shrink: 0;

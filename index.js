@@ -79,8 +79,8 @@ const setCurrentPage = (pageNum) => {
 <div class="card hidden">
   <img src="${images[i].image}" alt="glasses" class="avatar" loading="lazy"/>
   <div class="text">
-    <h3>${images[i].title}</h3>
-    <p>${images[i].name}</p>
+    <h3 class="images-heading">${images[i].title}</h3>
+    <p class="images-p">${images[i].name}</p>
   </div>
 </div>
 `;
