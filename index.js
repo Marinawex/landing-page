@@ -1,4 +1,4 @@
-const images = [
+let images = [
   {"id":1,"title":"Miss Vegas","name":"Yunus Fulton","image":"assets/image20.jpg"},
   {"id":2,"title":"Miss Alabama","name":"Audrey Chavez","image":"assets/image21.jpg"},
   {"id":3,"title":"Miss New York","name":"Maria Luna","image":"assets/image22.jpg"},
@@ -69,9 +69,6 @@ const setCurrentPage = (pageNum) => {
   });
 };
 
-// fetch("images.json")
-//   .then((response) => response.json())
-//   .then((images) => {
     let cardContainer = document.querySelector(".images");
 
     for (let i = 0; i < images.length; i++) {
@@ -126,5 +123,3 @@ const setCurrentPage = (pageNum) => {
         avatar.src = images[index].image;
       });
     });
-  // })
-  // .catch((error) => console.log("Error:", error));
