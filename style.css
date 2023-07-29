@@ -232,7 +232,7 @@ body {
 }
 .images .card .avatar {
   transition: all 0.3s ease-in-out;
-  height: 520px;
+  height: 495px;
   flex-shrink: 0;
   align-self: stretch;
   object-fit: cover;
@@ -241,12 +241,14 @@ body {
   .images .card .avatar {
     flex-shrink: 0;
     width: 500px;
+    height: 520px;
   }
 }
 @media (min-width: 1440px) {
   .images .card .avatar {
     display: flex;
     width: 500px;
+    height: 520px;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;

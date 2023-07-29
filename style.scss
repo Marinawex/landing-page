@@ -265,7 +265,7 @@ body {
 
     .avatar {
       transition: all 0.3s ease-in-out;
-      height: 520px;
+      height: 495px;
       flex-shrink: 0;
       align-self: stretch;
       object-fit: cover;
@@ -273,11 +273,13 @@ body {
       @include respond("medium") {
         flex-shrink: 0;
         width: 500px;
+        height: 520px;
       }
 
       @include respond("large") {
         display: flex;
         width: 500px;
+        height: 520px;
         flex-direction: column;
         align-items: flex-start;
         gap: 24px;
